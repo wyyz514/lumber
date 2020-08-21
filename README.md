@@ -10,7 +10,7 @@ const parsed = Lumber.parse(`[HTML template]`);
 ```
 
 ## Issues
-Yes. 
+Yes. WIP
 
--  I might have missed some symbols in the text regular expression. Feel free to open a PR or file a bug.
--  Whitespaces between sibling/parent tags cause an infinite loop. Working on a fix.
+- HTML attribute considerations: looser regular expression required?
+- Whitespace between element nodes breaks parser...needs experimentation...replace >\s< with >< ?
